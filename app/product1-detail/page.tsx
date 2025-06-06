@@ -39,6 +39,9 @@ export default function ArticlePage() {
             <Link href="/#contact" className="text-[#7a4a1e] hover:text-[#ff7b30] transition-colors font-medium text-lg">
               联系我们
             </Link>
+            <Link href="https://www.baozhixun.cn/crm" className="text-[#7a4a1e] hover:text-[#ff7b30] transition-colors font-medium text-lg">
+              CRM系统
+            </Link>
           </nav>
         </div>
       </header>
