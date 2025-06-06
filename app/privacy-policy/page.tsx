@@ -26,9 +26,14 @@ export default function PrivacyPolicy() {
             <Link href="/#contact" className="text-[#7a4a1e] hover:text-[#ff7b30] transition-colors font-medium text-lg">
               联系我们
             </Link>
-            <Link href="https://www.baozhixun.cn/crm" className="text-[#7a4a1e] hover:text-[#ff7b30] transition-colors font-medium text-lg">
-              CRM系统
-            </Link>
+            <a
+                  href="https://www.baozhixun.cn/crm"
+                  className="text-[#7a4a1e] hover:text-[#ff7b30] transition-colors font-medium text-lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                CRM系统
+              </a>
           </nav>
           <button 
             className="md:hidden border border-[#ffd6b3] rounded-md px-3 py-1.5 text-sm text-[#7a4a1e] hover:bg-[#fff3e6] flex items-center"
