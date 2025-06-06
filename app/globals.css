@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* 强制覆盖 Tailwind Typography（prose）和所有 markdown 常用元素样式 */
+.prose,
+.prose * {
+  display: revert;
+  box-sizing: border-box;
+}
+
+.prose {
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+  color: #7a4a1e !important;
+  word-break: break-word !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  color: #ff7b30 !important;
+  font-weight: bold !important;
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+.prose h1 { font-size: 1.90rem !important; }
+.prose h2 { font-size: 1.40rem !important; }
+.prose h3 { font-size: 1.15rem !important; }
+.prose h4 { font-size: 0.90rem !important; }
+
+.prose p {
+  margin: 1em 0 !important;
+  color: #7a4a1e !important;
+}
+
+.prose ul, .prose ol {
+  margin: 1em 0 1em 2em !important;
+  padding-left: 1.5em !important;
+}
+
+.prose li {
+  margin: 0.5em 0 !important;
+  list-style-position: inside !important;
+}
+
+.prose a {
+  color: #ff7b30 !important;
+  text-decoration: underline !important;
+  transition: color 0.2s !important;
+  cursor: pointer !important;
+}
+.prose a:hover {
+  color: #e66c1a !important;
+}
+
+.prose code {
+  background: #fff3e6 !important;
+  color: #b36b2c !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 4px !important;
+  font-size: 0.95em !important;
+  font-family: "Fira Mono", "Consolas", "Menlo", monospace !important;
+}
+
+.prose pre {
+  background: #fff3e6 !important;
+  color: #b36b2c !important;
+  padding: 1em !important;
+  border-radius: 6px !important;
+  overflow-x: auto !important;
+  margin: 1em 0 !important;
+  font-family: "Fira Mono", "Consolas", "Menlo", monospace !important;
+  font-size: 0.98em !important;
+}
+
+.prose blockquote {
+  border-left: 4px solid #ff7b30 !important;
+  background: #fff8f0 !important;
+  color: #b36b2c !important;
+  padding: 0.5em 1em !important;
+  margin: 1em 0 !important;
+  font-style: italic !important;
+}
+
+.prose img {
+  max-width: 100% !important;
+  border-radius: 8px !important;
+  margin: 1em 0 !important;
+  display: block !important;
+}
+
+.prose table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 1em 0 !important;
+}
+
+.prose th, .prose td {
+  border: 1px solid #ffd6b3 !important;
+  padding: 0.5em 1em !important;
+  text-align: left !important;
+}
+
+.prose hr {
+  border: none !important;
+  border-top: 2px solid #ffd6b3 !important;
+  margin: 2em 0 !important;
+}
+
+.prose strong {
+  font-weight: bold !important;
+  color: #b36b2c !important;
+}
+
+.prose em {
+  font-style: italic !important;
+}
+
+.prose del {
+  text-decoration: line-through !important;
+}
+
+.prose sup, .prose sub {
+  font-size: 0.8em !important;
+  line-height: 1 !important;
+  position: relative !important;
+  vertical-align: baseline !important;
+}
+
+.prose sup {
+  top: -0.5em !important;
+}
+
+.prose sub {
+  bottom: -0.25em !important;
+}
