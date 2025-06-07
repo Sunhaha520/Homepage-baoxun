@@ -77,9 +77,9 @@ export default function BaozhixunLanding() {
       <section id="home" className="relative">
         <div className="carousel-container relative overflow-hidden h-72 sm:h-96 md:h-[500px]">
           {/* 更浅的渐变背景 */}
-          <div className="absolute inset-0 animate-gradient-move bg-gradient-to-r from-[#ffd59e] via-[#ffb366] to-[#ff9900]"></div>
+          <div className="absolute inset-0 animate-gradient-move bg-gradient-to-r from-[#ffb366] via-[#ff9840] to-[#ff7b30]"></div>
           {/* 半透明背景图 */}
-          <div className="absolute inset-0 bg-[url('/assets/banner-bg.jpg')] bg-cover bg-center opacity-10"></div>
+        {/*  <div className="absolute inset-0 bg-[url('/assets/banner-bg.jpg')] bg-cover bg-center opacity-10"></div>*/}
           {/* 气泡动画层 */}
           <div className="absolute inset-0 pointer-events-none z-10">
             {bubbles.map((b, i) => (
