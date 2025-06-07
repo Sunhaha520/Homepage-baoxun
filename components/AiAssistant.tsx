@@ -147,6 +147,11 @@ export default function AiAssistant() {
       )}
       {/* 样式 */}
       <style jsx>{`
+        @media (max-width: 639px) {
+          .ai-float-btn {
+          display: none !important;
+          }
+       }
         .ai-float-btn {
           position: fixed;
           right: 40px;
