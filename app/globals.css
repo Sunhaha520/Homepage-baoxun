@@ -112,7 +112,6 @@ body {
 .prose img {
   max-width: 100% !important;
   border-radius: 8px !important;
-  margin: 1em 0 !important;
   display: block !important;
 }
 
